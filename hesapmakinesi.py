@@ -15,7 +15,7 @@ while True:
         if cikmak=="E":
             break
         else:
-            print("işleme devam ediliyor..!)
+            print("işlem devam ediliyor..!)
     elif islem==2:
         sayi1=float(input("1.değeri giriniz:"))
         sayi2=float(input("2.değeri giriniz:"))
@@ -25,7 +25,7 @@ while True:
         if cikmak=="E":
             break
         else:
-            print("işleme devam ediliyor..!)
+            print("işlem devam ediliyor..!)
     elif islem==3:
         sayi1=float(input("1.değeri giriniz:"))
         sayi2=float(input("2.değeri giriniz:"))
@@ -35,7 +35,7 @@ while True:
         if cikmak=="E":
             break
         else:
-            print("işleme devam ediliyor..!)
+            print("işlem devam ediliyor..!)
     elif islem==4:
         sayi1=float(input("1.değeri giriniz:"))
         sayi2=float(input("2.değeri giriniz:"))
@@ -45,6 +45,6 @@ while True:
         if cikmak=="E":
             break
         else:
-            print("işleme devam ediliyor..!)
+            print("işlem devam ediliyor..!)
     else:
         print("Geçersiz değer girdiniz lütfen geçerli bir değer giriniz..!")
