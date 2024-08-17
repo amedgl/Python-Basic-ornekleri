@@ -1,4 +1,4 @@
-urun_kaydi = {}
+urun_kaydi = dict()
 
 def urun_ekle(x):
     print("***ÜRÜN KAYDI PROGRAMI***")
@@ -40,10 +40,10 @@ while True:
         print("Geçersiz değer girdiniz lütfen geçerli değer giriniz.!")
 
     # Sözlük verisini dosyaya kaydetme 
-    with open("stok_bilgisi.txt","w",encoding="utf-8") as f:
+    with open("Dosya_adi.txt","w",encoding="utf-8") as f:
         for urun_adi, urun_seri_no in urun_kaydi.items():
             f.write(f"{urun_adi} : {urun_seri_no}\n")
 
     # Dosyadan okuma ve ekrana yazdırma
-    with open("stok_bilgisi.txt","r", encoding="utf-8") as f:
+    with open("Dosya_adi.txt","r", encoding="utf-8") as f:
         print(f.read())
