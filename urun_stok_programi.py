@@ -9,10 +9,10 @@ def urun_ekle(x):
     input("devam edilsinmi?")
 
 def urun_stok_bilgisi(x):
-    stok_bilgisi = len(urun_kaydi)
-    print(f"Stok'ta bulunan ürün sayısı: {stok_bilgisi}")
-    for i,j in urun_kaydi.items():
-        print(f"{i}:{j}")
+    # Dosyadan okuma ve ekrana yazdırma
+    print("\n***Stok Bilgisi Ekranı***")
+    with open("Dosya_adi.txt","r", encoding="utf-8") as f:
+        print(f.read())
     input("devam edilsinmi?")
 
 def urun_sil(x):
@@ -43,7 +43,3 @@ while True:
     with open("Dosya_adi.txt","w",encoding="utf-8") as f:
         for urun_adi, urun_seri_no in urun_kaydi.items():
             f.write(f"{urun_adi} : {urun_seri_no}\n")
-
-    # Dosyadan okuma ve ekrana yazdırma
-    with open("Dosya_adi.txt","r", encoding="utf-8") as f:
-        print(f.read())
